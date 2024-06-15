@@ -1,9 +1,10 @@
+import List from './list'
 
 function Section(props) {
-    const {data} = props;
+    const {movieList} = props;
     return ( 
         <div class="container">
-            {data.map(categories => {
+            {movieList.map(categories => {
                 <section class="movies-section">
                             <h2>{categories.category}</h2>
                             <List/>
@@ -11,7 +12,6 @@ function Section(props) {
             })}
         </div>
     );
-
   }
   
   export default Section
