@@ -1,4 +1,4 @@
-import List from './List';
+import List from './List'
 
 function Section(props) {
     const {movieList} = props; 
@@ -8,8 +8,8 @@ function Section(props) {
                 return(
                     <section class="movies-section">
                                 <h2>{categories.category}</h2>
-                                <List/>
-                    </section>
+                                <List movieImage= {categories} />
+                    </section> 
                 );
             })}
         </div> 
